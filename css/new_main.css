@@ -155,19 +155,21 @@ header .text {
 }
 */
 
-
 header {
+    height: calc(100vh - 115px);
     position: relative;
     width: 100%;
     min-height: auto;
-    /*-webkit-background-size: cover;
+    -webkit-background-size: cover;/**/
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-position: center;
-    background-image: url("../images/stock_group_photo.jpg");*/
+    background-position: center center;
+    background-image: url("../images/comp/groupphoto_cropped5.jpg");
+    background-repeat: no-repeat;
     text-align: center;
     color: white;
+    opacity: 0.9;
 }
 
 header .image {
@@ -177,6 +179,12 @@ header .image {
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+}
+
+header .image .img-responsive {
+    display: block !important;
+    max-width: 100% !important;
+    height: auto !important;
 }
 
 header .header-content {
